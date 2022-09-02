@@ -104,6 +104,21 @@ body {
   width: 387px;
   height: 381px;
   text-decoration: none;
+  border-radius: 10px;
+  transition: transform 0.4s;
+}
+
+.exercise-video:hover {
+    transform: scale(1.1);
+}
+
+@keyframes zoom {
+    from {
+        scale: 1;
+    }
+    tp {
+        scale: 1.2;
+    }
 }
 
 @media screen and (max-width:1200px) {

@@ -18,7 +18,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     useEffect(() => {
         const fetchExercisesData = async () => {
             let exercisesData = []
-            if(bodyPart == 'all') {
+            if (bodyPart == 'all') {
                 exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions)
             }
             else {
@@ -49,11 +49,11 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
                         count={Math.ceil(exercises.length / exercisePage)}
                         page={currentPage}
                         onChange={paginate}
-                        size='large' />)}
+                        size='large'
+                    />)}
             </Stack>
         </Box>
     )
 }
 
 export default Exercises
-
